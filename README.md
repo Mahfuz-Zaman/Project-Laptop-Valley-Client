@@ -4,7 +4,7 @@
 
 is a full-stack web-based application that offers different types of Laptop to the people.
 
-Live Site: **[ Laptop-valley ]()**.
+Live Site: **[ Laptop-valley ](https://laptop-valley-assignment-12.web.app/)**.
 
 ### Live Demo:
 
