@@ -52,7 +52,7 @@ function useFirebase() {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${user.email}`)
+    fetch(`https://fast-inlet-39044.herokuapp.com/user/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
@@ -101,7 +101,7 @@ function useFirebase() {
 
   const saveUser = (email, method) => {
     const user = { email };
-    fetch("http://localhost:5000/user/", {
+    fetch("https://fast-inlet-39044.herokuapp.com/user/", {
       method: method,
       headers: {
         "content-type": "application/json",

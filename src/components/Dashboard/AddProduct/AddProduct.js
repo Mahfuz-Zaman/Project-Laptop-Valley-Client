@@ -19,7 +19,7 @@ function AddProduct() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/addService/")
+    fetch("https://fast-inlet-39044.herokuapp.com/addService/")
       .then((response) => response.json())
       .then((data) => {
         setServices(data);
@@ -35,7 +35,7 @@ function AddProduct() {
 
     const newUser = { serviceName, image, serviceCharge, serviceDescription };
 
-    fetch("http://localhost:5000/addService", {
+    fetch("https://fast-inlet-39044.herokuapp.com/addService", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -56,7 +56,7 @@ function AddProduct() {
   const handleDeleteProduct = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/service/${id}`;
+      const url = `https://fast-inlet-39044.herokuapp.com/service/${id}`;
       fetch(url, {
         method: "DELETE",
       })

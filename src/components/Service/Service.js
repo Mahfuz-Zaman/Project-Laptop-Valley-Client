@@ -31,7 +31,7 @@ function Service({ history }) {
   const serviceDescription = useRef();
 
   useEffect(() => {
-    fetch("http://localhost:5000/addService/")
+    fetch("https://fast-inlet-39044.herokuapp.com/addService/")
       .then((response) => response.json())
       .then((data) => {
         setServicePage(data);
@@ -66,7 +66,7 @@ function Service({ history }) {
       status,
     };
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://fast-inlet-39044.herokuapp.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

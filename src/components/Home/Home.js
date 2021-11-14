@@ -15,14 +15,14 @@ function Home() {
   const [services, setServices] = useState([]);
   const [review, setReview] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/addService/")
+    fetch("https://fast-inlet-39044.herokuapp.com/addService/")
       .then((response) => response.json())
       .then((data) => {
         setServices(data);
       });
   }, []);
   useEffect(() => {
-    fetch("http://localhost:5000/review/")
+    fetch("https://fast-inlet-39044.herokuapp.com/review/")
       .then((response) => response.json())
       .then((data) => {
         setReview(data);
@@ -150,7 +150,7 @@ function Home() {
       <Container className="square border support my-5 bg-warning">
         <Row>
           <Col sm={12} md={6} lg={6} xl={6} className="img-fluid">
-            <img className="my-5" src="https://i.ibb.co/ZTjP8Sb/4.jpg" alt="" />
+            <img className="my-5 img-fluid" src="https://i.ibb.co/ZTjP8Sb/4.jpg" alt="" />
           </Col>
           <Col sm={12} md={6} lg={6} xl={6} className="bg-warning">
             <h2 className="support-h2 mt-5 pt-5">Laptop Valley Provides 24/7 customer support</h2>

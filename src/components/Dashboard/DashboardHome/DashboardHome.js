@@ -7,8 +7,8 @@ const DashboardHome = () => {
       <Grid item xs={12} sm={7}>
         <h3> Welcome To Laptop Valley Dashboard</h3>
       </Grid>
-      <Grid item xs={12} sm={7}>
-        <img src="https://i.ibb.co/vQpPGwT/6.jpg" alt="" />
+      <Grid item xs={12} sm={12}>
+        <img className="img-fluid" src="https://i.ibb.co/vQpPGwT/6.jpg" alt="" />
       </Grid>
     </Grid>
   );

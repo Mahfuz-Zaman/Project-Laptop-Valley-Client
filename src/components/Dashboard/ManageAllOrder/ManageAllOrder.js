@@ -19,7 +19,7 @@ function ManageAllOrder() {
   console.log(order);
 
   useEffect(() => {
-    fetch("http://localhost:5000/order/")
+    fetch("https://fast-inlet-39044.herokuapp.com/order/")
       .then((response) => response.json())
       .then((data) => {
         setAllOrder(data);
@@ -29,7 +29,7 @@ function ManageAllOrder() {
   const handleDeleteOrder = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/order/${id}`;
+      const url = `https://fast-inlet-39044.herokuapp.com/order/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -49,7 +49,7 @@ function ManageAllOrder() {
   const handleUpdateUser = (e, id) => {
     const specific_value = allOrder.find((element) => element._id === id);
     console.log(specific_value);
-    const url = `http://localhost:5000/order/${id}`;
+    const url = `https://fast-inlet-39044.herokuapp.com/order/${id}`;
     console.log(url);
     const updated = {
       Address: specific_value.Address,
