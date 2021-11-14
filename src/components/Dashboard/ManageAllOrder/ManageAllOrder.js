@@ -82,7 +82,7 @@ function ManageAllOrder() {
 
   return (
     // appointment page design
-    <div className="pt-4 pb-4 bg-warning">
+    <div className="pt-4 pb-4 alert alert-success">
       <Container>
         <div className="membership mb-3 ">
           <h2 style={{ textAlign: "center" }}>All Orders</h2>

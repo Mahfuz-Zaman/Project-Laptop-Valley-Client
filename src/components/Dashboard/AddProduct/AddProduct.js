@@ -74,7 +74,7 @@ function AddProduct() {
   };
 
   return (
-    <div className="bg-warning">
+    <div className="alert alert-success">
       <div>
         <h2 style={{ textAlign: "center" }}>Add a new Product</h2>
       </div>

@@ -21,8 +21,8 @@ function Login() {
   const redirect = location?.state?.from || "/";
   return (
     <div className="login">
-      <Container className="bg-warning">
-        <h2 className="text-warning text-center">Login </h2>
+      <Container className="alert alert-success">
+        <h2 className="text-success text-center">Login </h2>
         <p className="mt-2 fw-bold">Login with registered Email & Password</p>
         <p className="text-danger text-center">{error}</p>
         <Form
